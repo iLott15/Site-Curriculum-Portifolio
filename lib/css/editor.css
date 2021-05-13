@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url("C:/Users/ivanl/curriculumsite/fonts") format(ttf); /*put "format(ttf) in every font */
+    font-size: 1em;
+}
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url("C:/Users/ivanl/curriculumsite/fonts") format(ttf);
+    font-size: 1em;
+}
+head {
+    box-sizing: border-box;
+    position: absolute;
+}
+/*Style the body*/
+body {
+    font-family: 'OpenSans_Light';
+    margin: 0;
+    font-style: italic;
+}
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: rgb(17, 15, 6);
+    color: white;    
+    border-bottom: silver solid 2px;
+}
+  /* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    /*display: block;*/
+    overflow: hidden;
+    background-color: rgb(28, 25, 12);
+    position: relative;
+    position: -webkit-sticky;
+    top: 0;
+    border-bottom: silver solid 2px;
+    padding: 10px;
+}
+#btn-bars {
+    display: none;
+}
+/* Style navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: 'OpenSans-Light';
+    font-size: larger;
+    border: silver solid 2px;
+    border-radius: 12px;
+}
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+    background-color: silver;
+    color: black;
+    transition: 1s;
+    font-size: larger;
+    font-family: 'OpenSans-Light';
+}
+/* Active/current link */
+.navbar a.active {
+    background-color: silver;
+    color: black;
+}
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    display: -ms-flexbox; /*IE-10*/
+    -ms-flex-wrap: wrap; /*IE-10*/
+}
+/* Create tree - (4/4/4) = 12 - unequal columns that sits next to each other */
+/* All configuration of the grid system */
+.row {
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: baseline;
+}
+/* Just a configuration of the grid system */
+.col-xs-4 {
+    padding: 10px;
+    width: auto;
+}
+/* Just a configuration of the images */
+.col-xs-4 img{
+   border-radius: 15px;
+   border: silver solid 2px;
+}
+/* Sidebar/left column */
+.side {
+    flex: 100%;
+    background-color: rgba(28, 25, 12, 0.7);
+    width: 100%;
+    padding: 20px;
+    -ms-flex: 30%; /*IE-10*/
+    height: auto;
+    position: relative;
+    border-bottom: silver solid 2px;
+}
+/* Text in the Side editor */ 
+.side h2 {
+    color: rgb(28, 25, 12);
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-decoration: underline rgb(28, 25, 12);
+}
+
+/* Text in the Side display */
+.side p {
+    color: rgb(28, 25, 12);
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* Align of Graduation in Side display */
+.graduation, .formation, .extras, .hobby {
+    margin-top: 15px;
+}
+ /* text about graduation in side display in form of list */
+.side li {
+    color: rgb(28, 25, 12);
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+/* Just a configuration of the grid system */
+.col-xs-2 {
+    padding: 10px;
+    width: auto;
+}
+/* Just a configuration of the images */
+.col-xs-2 img{
+   border-radius: 15px;
+   border: silver solid 2px;
+}
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(17, 15, 6);
+    width: 100%;
+    position: absolute;
+}
+/* Text in footer about my creation */
+footer h2{
+    color: silver;
+    font-size: 12px;
+    font-style: normal;
+    margin: 0px;
+    float: right;
+    text-align: center;
+    text-decoration: underline silver;
+}
+/* Social List edit */
+#social-list-footer p {
+    text-align: center;
+    color: silver;
+    font-size: 25px;
+    font-style: normal;
+    margin: 10px;
+    text-decoration: underline silver;
+}
+#social-list-footer {
+    text-align: center;
+}
+#social-list-footer li {
+    display: inline-block;
+}
+#social-list-footer a {
+    display: block;
+    border: silver 2px solid;
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+}
+#social-list-footer i {
+    font-size: 22px;
+    margin: 3px;    
+    color: silver;
+}
